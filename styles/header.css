@@ -1,81 +1,30 @@
-.header{
-  height: 55px;
+.header {
+  width: 100%;
+  height: 150px;
   display: flex;
   flex-direction: row;
+  background-color: lightgray;
   justify-content: space-between;
 }
-.left-section{
+
+.main-logo-container {
+  height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-.hamburger-icon{
-  height: 24px;
-  margin-left: 24px;
-  margin-right: 24px;
+
+.main-logo {
+  height: 150px;
 }
-.youtube-icon{
-  height: 20px;
-}
-.mid-section{
-  flex: 1;
-  margin-left: 70px;
-  margin-right: 35px;
-  max-width: 500px;
+
+.top-menu-container {
   display: flex;
-  align-items: center;
 }
-.search-bar{
-  flex: 1;
-  height: 36px;
-  padding-left: 10px;
-  font-size: 16px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(192,192,192);
-  border-radius: 2px;
-  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.15);
-}
-.search-bar::placeholder{
-  font-family: Roboto, Arial;
-}
-.search-button{
-  height: 36px;
-  width: 66px;
-  background-color: rgb(240,240,240);
-  border-width: 1px;
-  border-radius: 1px;
-  border-color: rgb(192,192,192);
-  margin-left: -1px;
-  margin-right: 8px;
-}
-.search-icon{
-  height: 20px;
-}
-.voice-search-button{
-  height: 36px;
-  width: 36px;
-  border-radius: 18px;
-  border: none;
-  background-color: rgb(245,245,245);
-}
-.voice-search-icon{
-  height: 20px;
-}
-.right-section{
+
+.about-container, .contact-container, .donate-container {
   display: flex;
-  width: 180px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-}
-.upload-icon{
-  height: 20px;
-}
-.youtube-apps-icon{
-  height: 20px;
-}
-.notifications-icon{
-  height: 20px;
-}
-.current-user-picture{
-  height: 32px;
+  padding: 0 30px;
 }
