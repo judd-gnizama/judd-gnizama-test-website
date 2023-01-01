@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  background-color: lightgray;
+  justify-content: space-between;
+}
+
+.main-logo-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-logo {
+  height: 150px;
+}
+
+.top-menu-container {
+  display: flex;
+}
+
+.about-container, .contact-container, .donate-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
