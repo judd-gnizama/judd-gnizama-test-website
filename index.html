@@ -3,87 +3,165 @@
   <head>
     <title>Home | JMRTan.com</title>
     <link rel="icon" type="image/x-icon" href="resources/images/favicon.ico">
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/body.css">
-    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
   </head>
   <body>
-    <div class="header">
-      <div class="main-logo-container">
-        <a class="main-logo-link" href="https://www.jmrtan.com">
-          <img class="main-logo" src="resources/images/jmt logo.png">
-        </a>
-      </div>
-      <div class="top-menu-container">
-        <div class="about-container">
-          <a class="about-link" href="/about.html">About</a>
-        </div>
-
-        <div class="contact-container">
-          <a class="contact-link" href="/contact.html">Contact</a>
-        </div>
-
-        <div class="donate-container">
-          <a class="donate-link" href="/donate.html">Donate</a>
-        </div>
-      </div>
-    </div>
-    <div class="main-body-container">
-      <div class="sidebar-container">
-        <a href="/news.html" class="nav-button">
-          <img class="img-button" src="resources/images/megaphone.png">
-          <p>News</p>
-        </a>
-        <a href="/tools.html" class="nav-button">
-          <img class="img-button" src="resources/images/mouse.png">
-          <p>Tools</p>
-        </a>
-        <a href="/installers.html" class="nav-button">
-          <img class="img-button" src="resources/images/link.png">
-          <p>Installers</p>
-        </a>
-        <a href="/church.html" class="nav-button">
-          <img class="img-button" src="resources/images/house.png">
-          <p>Church</p>
-        </a>
-      </div>    
-      <div class="body-container">
-        <div class="section">
-          <div class="text-section">
-            <div class="picture-text-container">
-              <div class="picture-container">
-                <img class="picture" src="resources/images/background.jpg">
-              </div>
-              <div class="body-text">
-                <p class="text-title">Verse of the Day:</p>
-                <p>
-                  Now the Lord is the Spirit, and where the Spirit of the Lord is, there is freedom. 2 Corinthians 3:17
-                </p> 
-                <br>
-
-                <a class="proceed-to-link" href="https://my.bible.com/bible/59/2CO.3.ESV">Read full chapter</a>
-              </div>      
+    <header>
+            <div class="header-container">
+                <picture>
+                    <a href="#">
+                        <img class="main-logo" src="resources/images/jmt logo.png">
+                    </a>
+                </picture>
+                <div class="burger-menu">
+                    <button class="openMenu">
+                        <i class='bx bx-menu'></i>
+                    </button>
+                    <nav class="mobile-mainMenu">
+                        <a href="#news-section">News</a>
+                        <a href="#tools-section">Tools</a>
+                        <a href="#installers-section">Installers</a>
+                        <a href="#church-section">Church</a>
+                        <a href="#about-section">About</a>
+                        <a href="#contact-section">Contact</a>
+                        <a href="#donate-section">Donate</a>
+                        <button class="login-btn">Login</button>
+                        <button class="closeMenu">
+                          <i class='bx bx-x'></i>
+                        </button>
+                    </nav>
+                    <nav class="mainMenu">
+                        <a href="#news-section">News</a>
+                        <a href="#tools-section">Tools</a>
+                        <a href="#installers-section">Installers</a>
+                        <a href="#church-section">Church</a>
+                        <a href="#about-section">About</a>
+                        <a href="#contact-section">Contact</a>
+                        <a href="#donate-section">Donate</a>
+                        <button class="login-btn">Login</button>
+                    </nav>
+                </div>
             </div>
-          </div>  
-          
-        </div>
+    </header>
+    <main>
+        <section id="news-section">
+            <article>
+                <h2 class="section-title">News</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iste? Magni distinctio fuga, molestias nulla quisquam, nihil ad error doloremque incidunt rerum ab ex doloribus laudantium culpa itaque libero maiores.
+    
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ducimus consectetur. Illum amet velit cupiditate sequi accusamus aliquam, saepe recusandae consequuntur cum vero impedit aspernatur consectetur similique itaque magni! Itaque?
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section id="tools-section">
+            <article>
+                <h2 class="section-title">Tools</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iste? Magni distinctio fuga, molestias nulla quisquam, nihil ad error doloremque incidunt rerum ab ex doloribus laudantium culpa itaque libero maiores.
+    
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ducimus consectetur. Illum amet velit cupiditate sequi accusamus aliquam, saepe recusandae consequuntur cum vero impedit aspernatur consectetur similique itaque magni! Itaque?
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section id="installers-section">
+            <article>
+                <h2 class="section-title">Installers</h2>
+                <div class="carousel" id="card-container">
+                </div>
+            </article>
+        </section>
+        <hr>
+        <section id="church-section">
+            <article>
+                <h2 class="section-title">Church</h2>
 
-        
-        <div class="section">
-          
+                <div id="playlists-container">
+                    <iframe id="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/5K3TJH0rEqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="video-description">
+                        <h2 id="video-title"></h2>
+                        <p id="video-date"></p>
+                        <p id="video-speaker"></p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <section id="about-section">
+            <article>
+                <h2 class="section-title">About</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iste? Magni distinctio fuga, molestias nulla quisquam, nihil ad error doloremque incidunt rerum ab ex doloribus laudantium culpa itaque libero maiores.
+    
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ducimus consectetur. Illum amet velit cupiditate sequi accusamus aliquam, saepe recusandae consequuntur cum vero impedit aspernatur consectetur similique itaque magni! Itaque?
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section id="contact-section">
+            <article>
+                <h2 class="section-title">Contact</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iste? Magni distinctio fuga, molestias nulla quisquam, nihil ad error doloremque incidunt rerum ab ex doloribus laudantium culpa itaque libero maiores.
+    
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ducimus consectetur. Illum amet velit cupiditate sequi accusamus aliquam, saepe recusandae consequuntur cum vero impedit aspernatur consectetur similique itaque magni! Itaque?
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section id="donate-section">
+            <article>
+                <h2 class="section-title">Donate</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, iste? Magni distinctio fuga, molestias nulla quisquam, nihil ad error doloremque incidunt rerum ab ex doloribus laudantium culpa itaque libero maiores.
+    
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ducimus consectetur. Illum amet velit cupiditate sequi accusamus aliquam, saepe recusandae consequuntur cum vero impedit aspernatur consectetur similique itaque magni! Itaque?
+                </p>
+            </article>
+        </section>
+    </main> 
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2>JMRTan</h2>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia alias et magni voluptatibus? Deleniti temporibus laboriosam eaque quam odit! Nemo facere vel distinctio autem esse eligendi reiciendis tempore vero possimus!</span>
+            </div>
+            <div class="link-columns">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a class="footer-link" href="#news-section">News</a></li>
+                    <li><a class="footer-link" href="#tools-section">Tools</a></li>
+                    <li><a class="footer-link" href="#installers-section">Installers</a></li>
+                    <li><a class="footer-link" href="#church-section">Church</a></li>
+                </ul>
+            </div>
+            <div class="link-columns">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><a class="footer-link" href="#about-section">About</a></li>
+                    <li><a class="footer-link" href="#contact-section">Contact</a></li>
+                    <li><a class="footer-link" href="#donate-section">Donate</a></li>
+                    <br>
+                    <li><a class="footer-link" href="#">Terms of Use</a></li>
+                    <li><a class="footer-link" href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
         </div>
-      </div>      
-    </div>
-    <div class="footer-section">
-      <p class="footer-link">
-        <a class="footer-link" href="/terms.html">Terms of Use</a> | 
-        <a class="footer-link" href="/privacy.html">Privacy Policy</a> | 
-        <a class="footer-link" href="/contact.html">Contact</a>
-      </p> 
-      <p class="footer-link">
-        © 2022 JMRTan. All rights reserved.
-      </p>
+    </footer>
+    <div class="copyright">
+        Copyright &copy 2023 JMRTan. All Rights Reserved.
     </div>
   </body>
+  <script src="index.js"></script>
+  <script src="content-installers.js"></script>
+  <script src="content-church-videos.js"></script>
 </html>
